@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="common/css/attendance.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="common/js/attendance.js"></script>
+<!--달력 S-->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--달력 E-->
+<title>S·C 근태관리 | 업무공지</title>
+</head>
+<body>
+	<!-- 헤더 S -->
+	<header>
+		<div class="hd_box">
+			<div class="hd_logo"><a href="https://www.scrown.co.kr"><img src="images/logo.png"></a></div>
+			<div class="out_btn">로그아웃</div>
+		</div>
+	</header>
+	<!-- 헤더 E -->
+	<div class="container">
+	<!-- 메뉴 S -->
+		<aside>
+			<div class="mn_left">
+				<div class="mnl_box">
+					<div class="mnl_ico left_on"><img src="images/home_ico.png"></div>
+				</div>
+			</div>
+			<div class="mn_right">
+				<div class="mnr_ttlbox">
+					<div class="mnr_ttl">근태관리</div>
+					<div>출퇴근, 연차 등을 확인합니다.</div>
+				</div>
+				<a href="dashboard.html" class="mnr_set">
+					<div class="dash mnr_txt_off ">대시보드</div>
+				</a>
+				<a href="time_change.html" class="mnr_set tchange">
+					<div class="tchange mnr_txt_off">시간변경관리</div>
+				</a>
+				<a href="worktime.html" class="mnr_set">
+					<div class="worktime mnr_txt_off">근무시간관리</div>
+				</a>
+				<a href="dayoff.html" class="mnr_set">
+					<div class="dayoff mnr_txt_off">연차관리</div>
+				</a>
+				<a href="member.html" class="mnr_set">
+					<div class="member mnr_txt_off">직원관리</div>
+				</a>
+				<a href="notice.html" class="mnr_set">
+					<div class="notice mnr_txt_on">업무공지</div>
+				</a>
+				<a href="settings.html" class="mnr_set">
+					<div class="settings mnr_txt_off">근태설정</div>
+				</a>
+			</div>
+		</aside>
+	<!-- 메뉴 E -->
+	</div>
+	<!-- 컨텐츠 S -->
+		<div class="contents">
+			<div class="cts_ttl">업무공지</div>
+			<div class="tip_box">
+				<div class="tip_ttl">TIP</div>
+				<div class="tip_txt_box">
+					<div class="tip_txt">전체 공지, 한줄로 간략하게 내용 입력</div>
+					<div class="tip_txt">마지막 게시글만 공지노출</div>
+				</div>
+			</div>
+			<style>
+			</style>
+			<div class="bd_box">
+				<div class="vtc_set">
+					<div class="vtc_ttl">일자</div>
+					<div class="vtc_txt">
+						<a href="#" class="cld_btn"><input type="text" class="ipt_w100" name="dh_al" id="dh_al" autocomplete="off"/>
+						<img src="images/ico_calendar.png" class="cld_ico02"></a>
+					</div>
+				</div>
+				<div class="vtc_set">
+					<div class="vtc_ttl">작성자</div>
+					<div class="vtc_txt">강성창</div>
+				</div>
+				<div class="vtc_set">
+					<div class="vtc_ttl">내용</div>
+					<div class="vtc_txt">
+						<textarea name="" class="ntc_txta">내용이 입력이 되어있음</textarea>
+					</div>
+				</div>
+			</div>
+			<div class="btn_box">
+				<a href="notice.html" class="cancel_btn">목록</a>
+				<a href="notice.html" class="write_btn">수정</a>
+				<div class="delete_btn">삭제</div>
+			</div>
+		</div>
+	<!-- 컨텐츠 E -->
+</body>
+</html>

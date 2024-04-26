@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="common/css/attendance.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="common/js/attendance.js"></script>
+<!--달력 S-->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--달력 E-->
+	<title>S·C 근태관리 | 모바일 연장근무</title>
+</head>
+<body>
+	<!--팝업 S-->
+	<!--시간변경신청_출근 S-->
+	<div class="dh_chg_gwork_popup">
+		<div class="dhcp_ttl_box">
+			<div class="dhcp_ttl">시간 변경신청</div>
+		</div>
+		<div class="dhcp_cts_box">
+			<div class="dhcp_cts">
+				<div class="td_wrap">
+					<div class="td_ttl_set">
+						<div class="td_ttl_box">
+							<div class="td_ttl">
+								<div class="tdt">일자</div>
+							</div>
+						</div>
+					</div>
+					<div class="td_cts_set">
+						<div class="td_cts_box">
+							<div class="td_cts">2022-01-01</div>
+						</div>
+					</div>
+				</div>
+				<div class="td_wrap">
+					<div class="td_ttl_set">
+						<div class="td_ttl_box">
+							<div class="td_ttl">
+								<div class="tdt">변경 유형</div>
+							</div>
+						</div>
+					</div>
+					<div class="td_cts_set">
+						<div class="td_cts_box">
+							<div class="td_cts">출근</div>
+						</div>
+					</div>
+				</div>
+				<div class="td_wrap">
+					<div class="td_ttl_set">
+						<div class="td_ttl_box">
+							<div class="td_ttl">
+								<div class="tdt">시간 변경<font class="clr">*</font></div>
+							</div>
+						</div>
+					</div>
+					<div class="td_cts_set">
+						<div class="td_cts_box">
+							<div class="td_cts"><div class="tdcb">09:10</div> <div class="tdc"><img src="images/dh_arr.png" class="tchg_arr"></div> <div class="tdc"><input type="text" class="tchg"></div></div>
+						</div>
+					</div>
+				</div>
+				<div class="td_wrap">
+					<div class="td_ttl_set">
+						<div class="td_ttl_box">
+							<div class="td_ttl">
+								<div class="tdt">변경 사유<font class="clr">*</font></div>
+							</div>
+						</div>
+					</div>
+					<div class="td_cts_set">
+						<div class="td_cts_box">
+							<div class="td_cts_txtarea">
+								<textarea name="" placeholder="사유를 입력해주세요"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pop_btn_set">
+				<div class="pop_btn_box">
+					<div class="pop_btn01">신청</div>
+				</div>
+				<div class="pop_btn_box">
+					<div class="pop_btn02">취소</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dh_chg_gwork_pop_mask"></div>
+	<!--시간변경신청_출근 E-->
+	<!--시간변경신청_퇴근 S-->
+	<div class="dh_chg_fwork_popup">
+		<div class="dhcp_ttl_box">
+			<div class="dhcp_ttl">시간 변경신청</div>
+		</div>
+		<div class="dhcp_cts_box">
+			<div class="dhcp_cts">
+				<div class="td_wrap">
+					<div class="td_ttl_set">
+						<div class="td_ttl_box">
+							<div class="td_ttl">
+								<div class="tdt">일자</div>
+							</div>
+						</div>
+					</div>
+					<div class="td_cts_set">
+						<div class="td_cts_box">
+							<div class="td_cts">2022-01-01</div>
+						</div>
+					</div>
+				</div>
+				<div class="td_wrap">
+					<div class="td_ttl_set">
+						<div class="td_ttl_box">
+							<div class="td_ttl">
+								<div class="tdt">변경 유형</div>
+							</div>
+						</div>
+					</div>
+					<div class="td_cts_set">
+						<div class="td_cts_box">
+							<div class="td_cts">퇴근</div>
+						</div>
+					</div>
+				</div>
+				<div class="td_wrap">
+					<div class="td_ttl_set">
+						<div class="td_ttl_box">
+							<div class="td_ttl">
+								<div class="tdt">시간 변경<font class="clr">*</font></div>
+							</div>
+						</div>
+					</div>
+					<div class="td_cts_set">
+						<div class="td_cts_box">
+							<div class="td_cts"><div class="tdcb">09:10</div> <div class="tdc"><img src="images/dh_arr.png" class="tchg_arr"></div> <div class="tdc"><input type="text" class="tchg"></div></div>
+						</div>
+					</div>
+				</div>
+				<div class="td_wrap">
+					<div class="td_ttl_set">
+						<div class="td_ttl_box">
+							<div class="td_ttl">
+								<div class="tdt">변경 사유<font class="clr">*</font></div>
+							</div>
+						</div>
+					</div>
+					<div class="td_cts_set">
+						<div class="td_cts_box">
+							<div class="td_cts_txtarea">
+								<textarea name="" placeholder="사유를 입력해주세요"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pop_btn_set">
+				<div class="pop_btn_box">
+					<div class="pop_btn01">신청</div>
+				</div>
+				<div class="pop_btn_box">
+					<div class="pop_btn02">취소</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dh_chg_fwork_pop_mask"></div>
+	<!--시간변경신청_퇴근 E-->
+	<!--팝업 E-->
+	<!-- 로그인 S -->
+	<div class="mhr_wk_set">
+		<div class="mhr_wk_lgbox">
+			<div class="mhr_wk_lg">
+				<img src="images/mb_logo.png" alt="">
+			</div>
+		</div>
+		<div class="mhr_wk_con">
+			<div style="padding:0 14px 14px 14px;">
+				<div class="mhr_alm_box">
+					<div class="mhr_alm_txt">공지입니다. 필독하세요</div>
+				</div>
+				<div class="mhr_wk_box1">
+					<div class="m_wk_time">2022년 12월 12일
+						<div style="padding: 5px 0 0 0; font-size: 36px; font-weight: bold;">17:28:30</div>
+					</div>
+					<div class="mhr_wk_btn_box">
+						<div class="mhr_wk_btn_bf">
+							<img src="images/mb_wk_ico_gr.png" alt="">
+							<div class="mhr_wk_btn_txt">출근</div>
+						</div>
+						<img src="images/m_work_line.png" alt="" class="m_work_grline">
+						<div class="mhr_wk_btn_bf">
+							<img src="images/mb_ow_ico_gr.png" alt="">
+							<div class="mhr_ow_btn_txt">퇴근</div>
+						</div>
+					</div>
+				</div>
+				<div class="mhr_wk_box2">
+					<div class="mhr_wk_boxt">
+						<div class="mhr_gr_ttl">출근시간</div>
+						<div class="mhr_gr_list">09:00</div>
+						<a href="#" class="mhr_chg_btn_box">
+							<div class="mhr_chg_btn">변경</div>
+						</a>
+					</div>
+					<div class="mhr_wk_boxt">
+						<div class="mhr_gr_ttl">퇴근시간</div>
+						<div class="mhr_gr_list">18:00</div>
+						<a href="#" class="mhr_chg_btn_box02">
+							<div class="mhr_chg_btn">변경</div>
+						</a>
+					</div>
+					<div class="mhr_wk_boxt">
+						<div class="mhr_gr_ttl">연장근무</div>
+						<div class="mhr_gr_list">2시간</div>
+					</div>
+					<div class="mhr_wk_boxt">
+						<div class="mhr_gr_ttl">거리</div>
+						<div class="mhr_gr_list">회사와의 150미터</div>
+					</div>
+				</div>
+				<div class="mhr_overtm_tbox">
+					<div class="mhr_overtm_txt">연장근무 상태</div>
+					<div style="float: right; padding: 12px 0 2px 0;">
+						<label class="mhr_switch">
+							<input type="checkbox">
+							<span class="mhr_slider mhr_round"></span>
+						</label>
+					</div>
+				</div>
+				<div class="mhr_wk_box3">
+					<div class="mhr_ottm_box">
+						<div class="mhr_ot_ttl">연장근무 시작</div>
+						<div class="mhr_ot_ttl">연장근무 종료</div>
+						<div class="mhr_ot_list_s">18:00</div>
+						<div class="mhr_ot_list_e">20:00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 로그인 E -->
+	<script>
+		var check = $("input[type='checkbox']");
+		check.click(function(){
+			$("p").toggle();
+		});
+	</script>
+</body>
+</html>

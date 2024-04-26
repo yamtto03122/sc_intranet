@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="common/css/attendance.css">
+<title>S·C 근태관리 | 근무시간관리</title>
+</head>
+<body>
+	<!-- 헤더 S -->
+	<header>
+		<div class="hd_box">
+			<div class="hd_logo"><a href="https://www.scrown.co.kr"><img src="images/logo.png"></a></div>
+			<div class="out_btn">로그아웃</div>
+		</div>
+	</header>
+	<!-- 헤더 E -->
+	<div class="container">
+	<!-- 메뉴 S -->
+		<aside>
+			<div class="mn_left">
+				<div class="mnl_box">
+					<div class="mnl_ico left_on"><img src="images/home_ico.png"></div>
+				</div>
+			</div>
+			<div class="mn_right">
+				<div class="mnr_ttlbox">
+					<div class="mnr_ttl">근태관리</div>
+					<div>출퇴근, 연차 등을 확인합니다.</div>
+				</div>
+				<a href="dashboard.html" class="mnr_set">
+					<div class="dash mnr_txt_off ">대시보드</div>
+				</a>
+				<a href="time_change.html" class="mnr_set tchange">
+					<div class="tchange mnr_txt_off">시간변경관리</div>
+				</a>
+				<a href="worktime.html" class="mnr_set">
+					<div class="worktime mnr_txt_on">근무시간관리</div>
+				</a>
+				<a href="dayoff.html" class="mnr_set">
+					<div class="dayoff mnr_txt_off">연차관리</div>
+				</a>
+				<a href="member.html" class="mnr_set">
+					<div class="member mnr_txt_off">직원관리</div>
+				</a>
+				<a href="notice.html" class="mnr_set">
+					<div class="notice mnr_txt_off">업무공지</div>
+				</a>
+				<a href="settings.html" class="mnr_set">
+					<div class="settings mnr_txt_off">근태설정</div>
+				</a>
+			</div>
+		</aside>
+	<!-- 메뉴 E -->
+	</div>
+	<!-- 컨텐츠 S -->
+		<div class="contents">
+			<div class="cts_ttl">근무시간관리</div>
+			<div class="tip_box">
+				<div class="tip_ttl">TIP</div>
+				<div class="tip_txt_box">
+					<div class="tip_txt">연장근무는 연장근무 시급유무가 적용인 직원만 해당</div>
+				</div>
+			</div>
+			<div class="bd_box">
+				<div class="vtc_set">
+					<div class="vtc_ttl">소속</div>
+					<div class="vtc_txt">
+						<select class="sel_box01" name="소속">
+							<option>전체</option>
+							<option>디자인팀</option>
+						</select>
+					</div>
+				</div>
+				<div class="vtc_set">
+					<div class="vtc_ttl">기간</div>
+					<div class="vtc_txt">
+						<select class="sel_box01" name="년도">
+							<option>2023년</option>
+							<option>2022년</option>
+						</select>
+						<select class="sel_box01" name="월">
+							<option>7월</option>
+							<option>6월</option>
+							<option>5월</option>
+						</select>
+						<a href="#" class="sch_btn">검색</a>
+					</div>
+				</div>
+			</div>
+			<div class="bd_box">
+				<div class="bd_set">
+					<div class="tb_ttl02 tb_w5">NO</div>
+					<div class="tb_ttl02 tb_w9_5">소속</div>
+					<div class="tb_ttl02 tb_w9_5">이름</div>
+					<div class="tb_ttl02 tb_w9_5">직급</div>
+					<div class="tb_ttl02 tb_w9_5">직책</div>
+					<div class="tb_ttl02 tb_w9_5">전체근무시간<br>근무+연차</div>
+					<div class="tb_ttl02 tb_w9_5">실제근무시간</div>
+					<div class="tb_ttl02 tb_w9_5">연차사용시간</div>
+					<div class="tb_ttl tb_w28_5">
+						<div class="tb_ttl03">연장근무</div>
+						<div class="tb_ttl03">
+							<div class="tb_ttl tb_w33">시간</div>
+							<div class="tb_ttl tb_w33">시급</div>
+							<div class="tb_ttl tb_w33">급여</div>
+						</div>
+					</div>
+				</div>
+				<div class="bd_set b_yellow">
+					<div class="tb_txt tb_w71_5"><font class="nm f_red">합계</font></div>
+					<div class="tb_txt_r tb_w9_5"><font class="nm f_red">9시간</font></div>
+					<div class="tb_txt_r tb_w9_5"><font class="nm f_red">1,000원</font></div>
+					<div class="tb_txt_r tb_w9_5"><font class="nm f_red">9,000원</font></div>
+				</div>
+				<div class="bd_set">
+					<div class="tb_txt tb_w5">20</div>
+					<div class="tb_txt tb_w9_5">디자인팀</div>
+					<div class="tb_txt tb_w9_5">박재홍</div>
+					<div class="tb_txt tb_w9_5">부장</div>
+					<div class="tb_txt tb_w9_5">팀장</div>
+					<div class="tb_txt tb_w9_5">168:00</div>
+					<div class="tb_txt tb_w9_5">160:00</div>
+					<div class="tb_txt tb_w9_5">08:00</div>
+					<div class="tb_txt_r tb_w9_5">-</div>
+					<div class="tb_txt_r tb_w9_5">-</div>
+					<div class="tb_txt_r tb_w9_5">-</div>
+				</div>
+				<div class="bd_set">
+					<div class="tb_txt tb_w5">19</div>
+					<div class="tb_txt tb_w9_5">디자인팀</div>
+					<div class="tb_txt tb_w9_5">김도영</div>
+					<div class="tb_txt tb_w9_5">사원</div>
+					<div class="tb_txt tb_w9_5">팀원</div>
+					<div class="tb_txt tb_w9_5">162:00</div>
+					<div class="tb_txt tb_w9_5">160:00</div>
+					<div class="tb_txt tb_w9_5">02:00</div>
+					<div class="tb_txt_r tb_w9_5">1.5시간</div>
+					<div class="tb_txt_r tb_w9_5">1,000원</div>
+					<div class="tb_txt_r tb_w9_5">1,500원</div>
+				</div>
+				<div class="bd_set">
+					<div class="tb_txt tb_w5">18</div>
+					<div class="tb_txt tb_w9_5">개발팀</div>
+					<div class="tb_txt tb_w9_5">허윤</div>
+					<div class="tb_txt tb_w9_5">대표</div>
+					<div class="tb_txt tb_w9_5">전체관리</div>
+					<div class="tb_txt tb_w9_5">176:00</div>
+					<div class="tb_txt tb_w9_5">160:00</div>
+					<div class="tb_txt tb_w9_5">04:00</div>
+					<div class="tb_txt_r tb_w9_5">1.5시간</div>
+					<div class="tb_txt_r tb_w9_5">1,000원</div>
+					<div class="tb_txt_r tb_w9_5">1,500원</div>
+				</div>
+				<div class="bd_set">
+					<div class="tb_txt tb_w5">17</div>
+					<div class="tb_txt tb_w9_5">개발팀</div>
+					<div class="tb_txt tb_w9_5">김주연</div>
+					<div class="tb_txt tb_w9_5">주임</div>
+					<div class="tb_txt tb_w9_5">팀원</div>
+					<div class="tb_txt tb_w9_5">164:00</div>
+					<div class="tb_txt tb_w9_5">160:00</div>
+					<div class="tb_txt tb_w9_5">04:00</div>
+					<div class="tb_txt_r tb_w9_5">1.5시간</div>
+					<div class="tb_txt_r tb_w9_5">1,000원</div>
+					<div class="tb_txt_r tb_w9_5">1,500원</div>
+				</div>
+				<div class="bd_set">
+					<div class="tb_txt tb_w5">16</div>
+					<div class="tb_txt tb_w9_5">디자인팀</div>
+					<div class="tb_txt tb_w9_5">류화경</div>
+					<div class="tb_txt tb_w9_5">과장</div>
+					<div class="tb_txt tb_w9_5">팀원</div>
+					<div class="tb_txt tb_w9_5">162:00</div>
+					<div class="tb_txt tb_w9_5">160:00</div>
+					<div class="tb_txt tb_w9_5">02:00</div>
+					<div class="tb_txt_r tb_w9_5">1.5시간</div>
+					<div class="tb_txt_r tb_w9_5">1,000원</div>
+					<div class="tb_txt_r tb_w9_5">1,500원</div>
+				</div>
+				<div class="bd_set">
+					<div class="tb_txt tb_w5">15</div>
+					<div class="tb_txt tb_w9_5">미디어 기획팀</div>
+					<div class="tb_txt tb_w9_5">전수진</div>
+					<div class="tb_txt tb_w9_5">과장</div>
+					<div class="tb_txt tb_w9_5">팀원</div>
+					<div class="tb_txt tb_w9_5">168:00</div>
+					<div class="tb_txt tb_w9_5">160:00</div>
+					<div class="tb_txt tb_w9_5">08:00</div>
+					<div class="tb_txt_r tb_w9_5">1.5시간</div>
+					<div class="tb_txt_r tb_w9_5">1,000원</div>
+					<div class="tb_txt_r tb_w9_5">1,500원</div>
+				</div>
+			</div>
+		</div>
+	<!-- 컨텐츠 E -->
+</body>
+</html>
